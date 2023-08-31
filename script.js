@@ -1,4 +1,4 @@
-const numStars = 250; 
+const numStars = 250;
 const starsContainer = document.getElementById('stars-container');
 
 for (let i = 0; i < numStars; i++) {
@@ -15,3 +15,35 @@ for (let i = 0; i < numStars; i++) {
 function getRandomValue(min, max) {
     return Math.random() * (max - min) + min;
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const imageElement = document.getElementById('Image');
+    const audioElement = document.getElementById('Audio');
+
+    // Define the center point and radius in terms of the image's original size
+    const originalImageWidth = imageElement.naturalWidth;
+    const originalImageHeight = imageElement.naturalHeight;
+
+    const originalCenterX = 771;
+    const originalCenterY = 360;
+    const radius = 23;
+
+    imageElement.addEventListener('click', (event) => {
+        const clickedX = event.offsetX;
+        const clickedY = event.offsetY;
+
+        const scaleFactorX = imageElement.width / originalImageWidth;
+        const scaleFactorY = imageElement.height / originalImageHeight;
+
+        const originalClickedX = clickedX / scaleFactorX;
+        const originalClickedY = clickedY / scaleFactorY;
+
+        const distance = Math.sqrt(
+            Math.pow(originalClickedX - originalCenterX, 2) + Math.pow(originalClickedY - originalCenterY, 2)
+        );
+
+        if (distance <= radius) {
+            audioElement.play();
+        }
+    });
+});
