@@ -52,15 +52,5 @@ const menuIcon = document.querySelector('.menu-icon');
 const menu = document.querySelector('.menu');
 
 menuIcon.addEventListener('click', () => {
-    if (menu.classList.contains('open')) {
-        menu.style.opacity = 0;
-        setTimeout(() => {
-            menu.classList.remove('open');
-        }, 250);
-    } else {
-        menu.classList.add('open');
-        setTimeout(() => {
-            menu.style.opacity = 1;
-        }, 10);
-    }
+    menu.classList.toggle('open');
 });

@@ -1,3 +1,5 @@
+/*Background*/
+
 body {
     margin: 0;
     overflow: hidden;
@@ -44,6 +46,67 @@ body {
         opacity: var(--star-opacity);
     }
 }
+
+/*Menu*/
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(204, 0, 255);
+}
+
+.menu {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    border: 2px solid rgba(204, 0, 255, 0.8);
+    border-radius: 5px;
+    display: none;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.25s ease, display 0.25s ease;
+}
+
+.menu.open {
+    display: block;
+    opacity: 1;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    text-shadow: 0 0 10px rgba(204, 0, 255, 1);
+}
+
+/*Specific Things*/
+
+
+/*Front Page*/
 .content {
     display: flex;
     align-items: center;
@@ -83,58 +146,4 @@ body {
     border-radius: 10px;
     box-shadow: none;
     object-fit: contain;
-}
-
-.menu-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
-    padding: 5px;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 2;
-}
-
-.bar {
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    box-shadow: 0 0 10px rgb(204, 0, 255);
-}
-
-.menu {
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    border: 2px solid rgba(204, 0, 255, 0.8);
-    border-radius: 5px;
-    display: none;
-    z-index: 3;
-    opacity: 0;
-    transition: opacity 0.25s ease;
-}
-
-.menu.open {
-    display: block;
-    opacity: 1;
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-.menu li {
-    padding: 10px;
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-    font-family: sans-serif;
-    text-shadow: 0 0 10px rgba(204, 0, 255, 1);
 }
