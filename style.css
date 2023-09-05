@@ -103,6 +103,19 @@ body {
     text-shadow: 0 0 10px rgba(204, 0, 255, 1);
 }
 
+a{
+    background: -webkit-linear-gradient(90deg, 
+    rgba(149, 0, 255, 1) 0%, rgba(149, 0, 255, 1) 13%,
+    rgba(0, 0, 255, 1) 14%, rgba(0, 0, 255, 1) 28%,
+    rgba(0, 255, 0, 1) 29%, rgba(0, 255, 0, 1) 42%,
+    rgba(255, 239, 0, 1) 43%, rgba(255, 239, 0, 1) 56%,
+    rgba(255, 106, 0, 1) 57%, rgba(255, 106, 0, 1) 70%,
+    rgba(255, 0, 0, 1) 71%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
 /*Specific Things*/
 
 
