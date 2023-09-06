@@ -76,15 +76,13 @@ body {
     right: 10px;
     border: 2px solid rgba(204, 0, 255, 0.8);
     border-radius: 5px;
-    display: none;
-    z-index: 3;
     opacity: 0;
+    pointer-events: none;
     transition: opacity 0.25s ease;
 }
-
 .menu.open {
-    display: block;
     opacity: 1;
+    pointer-events: auto;
 }
 
 .menu ul {

@@ -54,6 +54,7 @@ const menu = document.querySelector('.menu');
 menuIcon.addEventListener('click', () => {
     if (menu.classList.contains('open')) {
         menu.style.opacity = 0;
+        menu.style.pointerEvents = 'none';
         setTimeout(() => {
             menu.classList.remove('open');
         }, 250);
@@ -61,6 +62,7 @@ menuIcon.addEventListener('click', () => {
         menu.classList.add('open');
         setTimeout(() => {
             menu.style.opacity = 1;
+            menu.style.pointerEvents = 'auto';
         }, 10);
     }
 });
