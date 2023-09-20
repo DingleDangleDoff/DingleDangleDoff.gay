@@ -1,15 +1,27 @@
 /*Background*/
 
+
 body {
     margin: 0;
     overflow: hidden;
-    background: linear-gradient(0deg, rgba(24, 0, 50, 1) 0%, rgba(0, 0, 45, 1) 100%);
     height: 100vh;
     position: relative;
+    overflow-y: overlay;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(24, 0, 50, 1) 0%, rgba(0, 0, 45, 1) 100%);
+    z-index: -1; 
 }
 
 .stars {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -57,7 +69,7 @@ body {
     height: 20px;
     padding: 5px;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
     z-index: 2;
@@ -71,7 +83,7 @@ body {
 }
 
 .menu {
-    position: absolute;
+    position: fixed;
     top: 60px;
     right: 10px;
     border: 2px solid rgba(204, 0, 255, 0.8);
@@ -116,4 +128,29 @@ a:not(.menu-link){
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(204, 0, 255, 1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: -webkit-linear-gradient(90deg, 
+    rgba(149, 0, 255, 1) 0%, rgba(149, 0, 255, 1) 16.566%,
+    rgba(0, 0, 255, 1) 16.666%, rgba(0, 0, 255, 1) 33.233%,
+    rgba(0, 255, 0, 1) 33.333%, rgba(0, 255, 0, 1) 49.9%,
+    rgba(255, 239, 0, 1) 50%, rgba(255, 239, 0, 1) 66.566%,
+    rgba(255, 106, 0, 1) 66.666%, rgba(255, 106, 0, 1) 83.233%,
+    rgba(255, 0, 0, 1) 83.333%);
+    box-shadow: 0 0 10px rgba(204, 0, 255, 1);
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(0deg, rgba(24, 0, 50, 1) 0%, rgba(0, 0, 45, 1) 100%);
 }
