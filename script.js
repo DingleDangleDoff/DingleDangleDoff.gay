@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const imageElement = document.getElementById('Image');
     const audioElement = document.getElementById('Audio');
 
-    // Define the center point and radius in terms of the image's original size
     const originalImageWidth = imageElement.naturalWidth;
     const originalImageHeight = imageElement.naturalHeight;
 
