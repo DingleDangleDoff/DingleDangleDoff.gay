@@ -6,18 +6,30 @@
     right: 5vw;
 }
 
-.buttons ul {
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 50px;
+    color: white;
+    font-family: sans-serif;
+    text-shadow: 0 0 10px rgba(204, 0, 255, 0.5);
+    margin-bottom: 10px;
+}
+
+.section ul {
     list-style: none;
     padding: 0;
 }
 
-.buttons ul li {
+.section ul li {
     display: inline-block;
     margin: 0 10px;
     position: relative;
 }
 
-.buttons ul li a {
+.section ul li a {
     position: relative;
     display: block;
 }
