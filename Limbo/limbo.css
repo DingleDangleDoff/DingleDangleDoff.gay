@@ -14,3 +14,14 @@
 .highlighted {
     filter: hue-rotate(0deg);
 }
+
+.wip {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-shadow: 0 0 10px rgba(204, 0, 255, 0.5);
+    color: white;
+    font-family: sans-serif;
+}
