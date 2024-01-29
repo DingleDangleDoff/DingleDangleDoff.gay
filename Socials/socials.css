@@ -8,6 +8,7 @@
 
 .social {
     margin-bottom: 20px;
+    backdrop-filter: blur(2px);
 }
 
 .social a {
