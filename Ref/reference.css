@@ -9,6 +9,7 @@
     max-height: 100vh;
     width: auto;
     height: auto;
+    align-items: center;
 }
 
 .buttons {
