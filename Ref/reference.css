@@ -1,7 +1,8 @@
 .reference {
     display: inline-block;
     position: relative;
-    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 .reference img {
@@ -9,7 +10,6 @@
     max-height: 100vh;
     width: auto;
     height: auto;
-    align-items: center;
 }
 
 .buttons {
