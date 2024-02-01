@@ -94,6 +94,7 @@ body::before {
     transition: opacity 0.25s ease;
     z-index: 3;
     backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
 }
 .menu.open {
     opacity: 1;

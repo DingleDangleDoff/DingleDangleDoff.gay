@@ -63,6 +63,7 @@ h1 {
     border-radius: 10px;
     padding: 10px;
     backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
 }
 
 .text {

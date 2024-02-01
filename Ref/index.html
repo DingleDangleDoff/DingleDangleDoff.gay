@@ -37,7 +37,7 @@
         <nav class="menu">
             <ul>
                 <li><a class="menu-link" href="">Home</a></li>
-            <!--<li><a class="menu-link" href="Space">Space</a></li>-->
+                <!--<li><a class="menu-link" href="Space">Space</a></li>-->
                 <li><a class="menu-link" href="About-Me">About</a></li>
                 <li><a class="menu-link" href="Socials">Socials</a></li>
                 <!--<li><a class="menu-link" href="Ref">Ref Sheet</a></li>-->
@@ -48,8 +48,49 @@
 
         <div class="reference">
             <img id="ref" src="/Ref/RefSheet.png">
-            <div class="question-mark" onclick="toggleTooltip()">?</div>
-            <h1>Annotations to be added</h1>
+        
+            <div class="info info-colours" data-tooltip-id="Colours">?</div>
+            <div class="tooltip" id="Colours">
+                <p>Only 2 colours, #483E48 for main and #70FD6E for green. The green is also bioluminescent.</p>
+            </div>
+        
+            <div class="info info-paws" data-tooltip-id="Paws">?</div>
+            <div class="tooltip" id="Paws">
+                <p>Paws! They do not have feet, just paws. Digitigrade legs too.</p>
+                <img src="Buttons\Paws!.gif" alt="uwu">
+            </div>
+
+            <div class="info info-maw" data-tooltip-id="Maw">?</div>
+            <div class="tooltip" id="Maw">
+                <p>Depending on the art style, teeth can be drawn if you want. An example can be shown below.
+                    The maw spikes will also overlap when the mouth is closed, as shown on the left Doff.
+                </p>
+                <img src="Ref\images\Teeth.jpg" alt="Teeth Example">
+            </div>
+
+            <div class="info info-nose" data-tooltip-id="Nose">?</div>
+            <div class="tooltip" id="Nose">
+                <p>Thin nose, like a half way between a feline and a canine.</p>
+            </div>
+
+            <div class="info info-floof" data-tooltip-id="Floof">?</div>
+            <div class="tooltip" id="Floof">
+                <p>Normal fur colour but fades to the green at the end of the fur. Depending on art style 
+                    it may also be done without any gradient and just show green tipped (Such as in this ref). 
+                    The same also goes for the tuffs of fur at the elbows, chest and heels (Excluding the tail 
+                    tip which is fully green).</p>
+            </div>
+
+            <div class="info info-eyes" data-tooltip-id="Eyes">?</div>
+            <div class="tooltip" id="Eyes">
+                <p>No pupils, just solid green. However I do like seeing the creative ways artists draw their eyes.</p>
+            </div>
+
+            <div class="info info-head" data-tooltip-id="Head">?</div>
+            <div class="tooltip" id="Head">
+                <p>Thinner dragon like shaped head but with a nose instead. Like how it is done below.</p>
+                <img src="\Ref\images\Head-Shape.png" alt="Head Shape">
+            </div>
         </div>
 
         <section class="buttons">
@@ -67,6 +108,6 @@
         </section>  
         
         <script src="script.js"></script>
-        <script src="info.js"></script>
+        <script src="/Ref/info.js"></script>
     </body>
     </html>
