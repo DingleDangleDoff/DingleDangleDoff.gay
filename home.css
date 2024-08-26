@@ -39,3 +39,13 @@
     border-radius: 10px;
     object-fit: contain;
 }
+
+.moon {
+    position: absolute;
+    object-fit: contain;
+    display: none;
+}
+.moon img{
+    width: 50px;
+    height: auto;
+}
