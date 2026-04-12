@@ -182,6 +182,23 @@ hr{
     max-width: 100vw;
 }
 
+.Tail {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    color: white;
+    font-family: sans-serif;
+    text-shadow: 0 0 10px rgba(204, 0, 255, 0.5);
+    padding: 5px;
+    font-size: 2.5vh;
+    max-width: 100vw;
+}
+
+.Tail img {
+    max-width: 40%;
+    height: auto;
+}
+
 .Extra {
     display: flex;
     align-items: center; 
